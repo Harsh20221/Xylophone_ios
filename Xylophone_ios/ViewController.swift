@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    var player : AVAudioPlayer? // This is how we assign a Audio player for AV 
 
     @IBAction func FirstButtonController_C(_ sender: UIButton) {
         print("I Love You ")
