@@ -29,6 +29,8 @@ class ViewController: UIViewController {
 
         ////Write your Code here for The Action you wanna perform with this Button
         playSoundC() //? To add the sound folder in X code , Just Drag and drop the folder in X code , do not use Finder to copy paste   This will play C sound
+        print(sender.currentTitle!)//? Use this current title to get the title of the Button Pressed 
+    
     }
     
     
