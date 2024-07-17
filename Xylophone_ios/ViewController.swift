@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         ///!! Do not forget to add ! after CurrentTitle
                 print(sender.currentTitle!)//? Use this current title to get the title of the Button Pressed
         sender.alpha=0.5;
-        let seconds = 0.2  ///The Below code will change the opacity of the button back to original after 0.2 seconds
+        let seconds = 0.2  ///?The Below code will change the opacity of the button back to original after 0.2 seconds
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             sender.alpha=1;
         }
