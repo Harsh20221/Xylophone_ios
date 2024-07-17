@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     func playSound(soundname:String ) {  /////PLAYSOUND
     let path = Bundle.main.url(forResource: soundname, withExtension:"wav") //This is the updated Player the first line is locating the sound the 2 line is inserting the file into the player and 3 line is actually responsible for playing the sound
+        ///!! Make sure to also specify the soundname parameter here in this path variable 
             player = try!AVAudioPlayer(contentsOf: path!)
             player?.play()
     }
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
 
         ////Write your Code here for The Action you wanna perform with this Button
         playSound(soundname:sender.currentTitle! ) //? To add the sound folder in X code , Just Drag and drop the folder in X code , do not use Finder to copy paste   This will play C sound
+        ///!! Do not forget to add ! after CurrentTitle
         print(sender.currentTitle!)//? Use this current title to get the title of the Button Pressed
     
     }
